@@ -1,0 +1,28 @@
+.title_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top:  10px;
+    margin-bottom:  20px;
+    height: 30%;
+    flex-direction: column;
+}
+.faq-div{
+    margin: 20px;
+}
+
+.title_div p{
+    background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 0px;
+}
+.title_div1{
+    display: flex;
+    justify-content: space-between;
+}

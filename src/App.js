@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Questions from "./Questions";
 
 function App() {
+  const question=[
+      {
+        id:1,
+        title:"Is this a good product?",
+        info:"lorem ispomfskfbsf, sfns fn sd,f sn fsd fms d,fnsdmf"
+      },
+      {
+        id:2,
+        title:"How I can assist u?",
+        info:"lorem ispomfskfbsf, sfns fn sd,f sn fsd fms d,fnsdmf"
+      },
+      {
+        id:3,
+        title:"hello dear?",
+        info:"lorem ispomfskfbsf, sfns fn sd,f sn fsd fms d,fnsdmf"
+      },
+      {
+        id:3,
+        title:"hello dear?",
+        info:"lorem ispomfskfbsf, sfns fn sd,f sn fsd fms d,fnsdmf"
+      },
+      {
+        id:3,
+        title:"hello dear?",
+        info:"lorem ispomfskfbsf, sfns fn sd,f sn fsd fms d,fnsdmf"
+      },
+      
+      
+      
+      
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="main-heading">Project 2: FAQ/Accordion</h1>
+      <div className="container">
+        <h2 >Frequently Asked Questions</h2>
+        <div className="container2">
+
+        {
+          question.map((item,idx)=>{
+            return  <Questions item={item} idx={idx}/>
+          })
+        }
+        </div>
+      </div>
     </div>
   );
 }
